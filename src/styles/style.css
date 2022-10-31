@@ -1,0 +1,211 @@
+#app-login-btn {
+  width: 160px;
+}
+#blablabla {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+#blablabla.open {
+  display: block;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_open {
+  display: block;
+}
+
+.popup__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  max-width: 588px;
+  width: 100%;
+}
+
+.popup__wrapper {
+  padding: 40px;
+}
+
+.tagTask{
+  color: #fff;
+  padding: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.containter_task {
+  display: flex;
+  justify-content:space-between;
+  
+}
+
+
+
+.taskBox{
+  border-style: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgba(41, 39, 39, 0.966) ;
+}
+
+
+
+.Task{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 300px;
+    max-height: 300px;
+    overflow: auto;
+}
+ 
+.taskBox ul > li{
+ background-color: #fff;
+
+ padding: 5px;
+ border: #fff;
+ border-radius: 10px;
+ margin-bottom: 3px;
+}
+
+ ul{
+  padding: 5px;
+}
+
+.button{
+  background-color: rgba(41, 39, 39, 0.966) ;
+  border-color: #0dcaf0;
+  border-radius: 10px;
+  color: #0dcaf0;
+}
+
+.drop{
+  display: none;
+}
+
+.btnDrop{
+  color: #fff;
+  border: 2px solid #0dcaf0 ;
+  height: 30px;
+  width: 30px;
+}
+
+.openMenu {
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  color: rgba(41, 39, 39, 0.966);
+  z-index: 1000;
+  border: 2px solid #0dcaf0;
+  border-radius: 4px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.dropdownMenu{
+  position: relative;
+  height: 30px;
+  width: 90px;
+}
+
+.dropLi{
+  border-radius: 4px;
+  background-color: rgba(41, 39, 39, 0.966);
+  color: #0dcaf0;
+  margin-top: 7px;
+}
+
+.divUserConteiner{
+  border-radius: 4px;
+  background-color: rgba(41, 39, 39, 0.966);
+  color: #0dcaf0;
+  margin-top: 7px;
+  border:rgb(4, 4, 12) 2px;
+}
+
+.contentAdmin{
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+  flex-wrap: wrap;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+  
+@media (max-width: 1200px){
+ .container{
+     max-width: 970px;
+  }
+  .taskBox{
+    margin: 10px 10px;
+    width: auto;;
+  }
+  
+}
+
+@media (max-width: 992px){
+ .container{
+      max-width: 750px;
+      font-size: 10px;
+   } 
+   .tagTask{
+    font-size: auto;
+
+   } 
+   .taskBox{
+    margin: 10px 10px;
+    width: 100%;;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+}
+ }
+
+ @media (max-width: 766px){
+  .container{
+      
+      font-size: 15px;
+   }
+   .taskBox>h1{
+    font-size: 20px;
+   }
+ }
+
+ @media (max-width: 500px){
+  .container{
+      
+      font-size: 10px;
+   }
+   .taskBox>h1{
+    font-size: 15px;
+   }
+ }
